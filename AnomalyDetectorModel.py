@@ -266,20 +266,12 @@ class ModelTrainer:
         if use_smote:
             X_train, y_train = self.apply_smote(X_train, y_train)
         
-        #pesi personalizzati
-        class_weights = {
-            'BROKEN': 2.0,    
-            'NORMAL': 2.0,    
-            'RECOVERING': 1.0 
-        }
-        
         model = BalancedRandomForestClassifier(
-            max_depth=None,
             n_estimators=100,
+            max_depth=None,
             min_samples_split=2,
             min_samples_leaf=1,
             random_state=42,
-            class_weight=class_weights
         )
         
         model.fit(X_train, y_train)
