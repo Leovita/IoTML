@@ -32,7 +32,7 @@ Un progetto di **analisi e previsione guasti su sensori industriali** basato su 
 python script.py --train
 ```
 
-### 🔧 Addestramento del modello con ds unlabeled
+### 🔧 Predizione del modello con dataset non etichettato
 
 ```bash
 python script.py --predict --input data/unlabeled.csv --output preds/pred.csv
