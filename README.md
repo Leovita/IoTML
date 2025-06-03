@@ -5,10 +5,10 @@ https://www.kaggle.com/code/shawkyelgendy/pump-sensor-data-timeseriesanalysis/in
 + in aggiunta -> AI generated BROKEN sensors dataset per trainare il modello per via della scarsita' dei dati "corrotti" (solo 8 nel df originale). 
 
 Per addestrare il modello:
-    python script.py --train
+   ''' python script.py --train '''
 
 Per fare previsioni su un file CSV senza etichette:
-    python script.py --predict --input path/to/unlabeled_data.csv --output preds/predictions.csv
+ '''   python script.py --predict --input path/to/unlabeled_data.csv --output preds/predictions.csv '''
 
 Per entrambe le operazioni:
-    python script.py --train --predict --input path/to/unlabeled_data.csv
+'''    python script.py --train --predict --input path/to/unlabeled_data.csv '''
